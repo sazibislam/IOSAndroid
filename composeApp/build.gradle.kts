@@ -30,6 +30,11 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+
+            implementation(libs.accompanist.permissions)
+            // implementation("androidx.compose.foundation:foundation-permissions:1.7.0")
+
+            // implementation(libs.androidx.camera.core)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -40,6 +45,10 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
+
+            implementation(libs.androidx.camera.lifecycle)
+            implementation(libs.androidx.camera.camera2)
+            implementation(libs.androidx.camera.view)
         }
     }
 }
